@@ -17,6 +17,6 @@ a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
 def list_deduper(a, b):
-    return(list(set([number for number in a if number in b])))
+    return(set_deduper([number for number in a if number in b]))
 
 print(list_deduper(a, b))
